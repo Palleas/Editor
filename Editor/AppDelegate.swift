@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Squirrel
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
