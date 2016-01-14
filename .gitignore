@@ -31,3 +31,7 @@ DerivedData
 Carthage/Checkouts
 
 Carthage/Build
+
+# Release
+*.app
+*.zip

@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Squirrel
+import Sparkle
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -17,11 +17,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var commitMessageField: NSTextView!
     
     var path: String!
-    
+
+
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        let updater = SUUpdater()
+        updater.checkForUpdatesInBackground()
+
         let app = aNotification.object as! NSApplication
         
-        print(NSProcessInfo.processInfo())
         let path = NSProcessInfo.processInfo().arguments.filter({ ($0 as NSString).lastPathComponent == "COMMIT_MSG" }).first
         
         if let path = path {

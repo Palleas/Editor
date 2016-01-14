@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A389E771C4D092E0054E15F /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7A389E761C4D092E0054E15F /* dsa_pub.pem */; };
 		7A8308A31C46F20100743770 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A01C46F20100743770 /* Mantle.framework */; };
 		7A8308A41C46F20100743770 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A01C46F20100743770 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A8308A51C46F20100743770 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A11C46F20100743770 /* ReactiveCocoa.framework */; };
 		7A8308A61C46F20100743770 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A11C46F20100743770 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A8308A71C46F20100743770 /* Squirrel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A21C46F20100743770 /* Squirrel.framework */; };
-		7A8308A81C46F20100743770 /* Squirrel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308A21C46F20100743770 /* Squirrel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A8308B51C48932000743770 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308B41C48932000743770 /* Sparkle.framework */; };
+		7A8308B71C48934A00743770 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8308B41C48932000743770 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A8C0F6F1C449D6200BAFF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C0F6E1C449D6200BAFF97 /* AppDelegate.swift */; };
 		7A8C0F711C449D6200BAFF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C0F701C449D6200BAFF97 /* Assets.xcassets */; };
 		7A8C0F741C449D6200BAFF97 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C0F721C449D6200BAFF97 /* MainMenu.xib */; };
@@ -25,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7A8308A81C46F20100743770 /* Squirrel.framework in Embed Frameworks */,
+				7A8308B71C48934A00743770 /* Sparkle.framework in Embed Frameworks */,
 				7A8308A41C46F20100743770 /* Mantle.framework in Embed Frameworks */,
 				7A8308A61C46F20100743770 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
@@ -35,9 +36,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A389E761C4D092E0054E15F /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		7A8308A01C46F20100743770 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/Mac/Mantle.framework; sourceTree = "<group>"; };
 		7A8308A11C46F20100743770 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		7A8308A21C46F20100743770 /* Squirrel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Squirrel.framework; path = Carthage/Build/Mac/Squirrel.framework; sourceTree = "<group>"; };
+		7A8308B41C48932000743770 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		7A8C0F6B1C449D6200BAFF97 /* Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Editor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8C0F6E1C449D6200BAFF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8C0F701C449D6200BAFF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,9 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A8308A71C46F20100743770 /* Squirrel.framework in Frameworks */,
 				7A8308A31C46F20100743770 /* Mantle.framework in Frameworks */,
 				7A8308A51C46F20100743770 /* ReactiveCocoa.framework in Frameworks */,
+				7A8308B51C48932000743770 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +64,9 @@
 		7A8308AA1C46F21500743770 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A8308B41C48932000743770 /* Sparkle.framework */,
 				7A8308A01C46F20100743770 /* Mantle.framework */,
 				7A8308A11C46F20100743770 /* ReactiveCocoa.framework */,
-				7A8308A21C46F20100743770 /* Squirrel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +91,7 @@
 		7A8C0F6D1C449D6200BAFF97 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
+				7A389E761C4D092E0054E15F /* dsa_pub.pem */,
 				7A8C0F6E1C449D6200BAFF97 /* AppDelegate.swift */,
 				7A8C0F701C449D6200BAFF97 /* Assets.xcassets */,
 				7A8C0F721C449D6200BAFF97 /* MainMenu.xib */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8C0F711C449D6200BAFF97 /* Assets.xcassets in Resources */,
+				7A389E771C4D092E0054E15F /* dsa_pub.pem in Resources */,
 				7A8C0F741C449D6200BAFF97 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,15 +274,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Romain Pouclet (8NED62XG76)";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Editor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -286,15 +294,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Romain Pouclet (8NED62XG76)";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Editor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.Editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
