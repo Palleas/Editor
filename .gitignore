@@ -35,3 +35,4 @@ Carthage/Build
 # Release
 *.app
 *.zip
+fastlane/report.xml
