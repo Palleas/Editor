@@ -28,7 +28,7 @@ platform :mac do
     # hockey(:api_token => "5fcef81dbdfd44f7a9fde49c16f5fe3a", :ipa => zip_path)
     Actions.sh("/Users/Romain/Sandbox/Sparkle/bin/sign_update #{zip_path} /Users/Romain/Dropbox/Projects\\ -\\ Perfectly-cooked/Editor/dsa_priv.pem")
 
-
+    # Actions.sh("rm -Rf #{zip_path} #{app_path}")
 
     # require 'json'
     # require 'time'
