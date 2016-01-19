@@ -36,6 +36,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             app.terminate(self)
         }
+        
+        NSEvent.addLocalMonitorForEventsMatchingMask([.KeyDownMask]) { (event) -> NSEvent? in
+            if event.modifierFlags.contains(.CommandKeyMask) && event.keyCode == 36 {
+                self.didTapCommit(self)
+                return nil
+            }
+            
+            return event
+        }
     }
     
     @IBAction func didTapCommit(sender: AnyObject) {
